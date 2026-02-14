@@ -59,11 +59,11 @@
 
         win_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans    &trans  &trans                     &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans     &trans  &trans    &trans  &trans                     &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans     &trans  &trans    &trans  &trans                     &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans     &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &kp LCTRL  &trans  &kp LGUI  &trans  &lt 3 TAB  &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &trans
             >;
         };
 
