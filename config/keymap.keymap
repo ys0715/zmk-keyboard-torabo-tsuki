@@ -30,6 +30,18 @@
             key-positions = <18 30 44>;
             layers = <0>;
         };
+
+        to_win {
+            bindings = <&to 1>;
+            key-positions = <17 29 41>;
+            layers = <0>;
+        };
+
+        to_default {
+            bindings = <&to 0>;
+            key-positions = <29 17 41>;
+            layers = <1>;
+        };
     };
 
     keymap {
