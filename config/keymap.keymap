@@ -15,6 +15,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
+
     combos {
         compatible = "zmk,combos";
 
@@ -40,17 +41,27 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        default_layer {
             bindings = <
-&none  &none      &none     &none     &none       &none                                &none        &none  &none      &none    &none      &none
-&none  &kp Q      &kp W     &kp E     &kp R       &kp T                                &kp Y        &kp U  &kp I      &kp O    &kp P      &none
-&none  &kp A      &kp S     &kp D     &kp F       &kp G                                &kp H        &kp J  &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z      &kp X     &kp C     &kp V       &kp B      &none      &none          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &lt 1 TAB  &kp SPACE  &kp BACKSPACE  &lt 2 ENTER  &none  &none      &none    &kp RCTRL  &none
+&none  &none     &none     &none      &none       &none                                &none        &none  &none      &none    &none      &none
+&none  &kp Q     &kp W     &kp E      &kp R       &kp T                                &kp Y        &kp U  &kp I      &kp O    &kp P      &none
+&none  &kp A     &kp S     &kp D      &kp F       &kp G                                &kp H        &kp J  &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z     &kp X     &kp C      &kp V       &kp B      &none      &none          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &lt 2 TAB  &kp SPACE  &kp BACKSPACE  &lt 4 ENTER  &none  &none      &none    &kp RGUI   &none
             >;
         };
 
-        layer_1 {
+        win_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        lower_layer {
             bindings = <
 &trans  &trans            &trans            &trans      &trans      &trans                           &trans          &trans         &trans            &trans             &trans         &trans
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                       &kp LS(N6)      &kp LS(N7)     &kp LS(N8)        &kp LS(N9)         &kp LS(N0)     &trans
@@ -60,7 +71,17 @@
             >;
         };
 
-        layer_2 {
+        win_lower_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        simbol_layer {
             bindings = <
 &trans  &trans   &trans   &trans        &trans        &trans                           &trans            &trans     &trans         &trans     &trans      &trans
 &trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                           &kp HOME          &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp ESCAPE  &trans
