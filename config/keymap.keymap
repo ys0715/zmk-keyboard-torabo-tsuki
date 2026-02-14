@@ -20,14 +20,8 @@
         compatible = "zmk,combos";
 
         esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&mt2 LS(LG(NUMBER_4)) ESCAPE>;
             key-positions = <13 14>;
-            layers = <0>;
-        };
-
-        mac_screen_shot {
-            bindings = <&kp LG(LS(NUMBER_4))>;
-            key-positions = <13 14 15>;
             layers = <0>;
         };
 
