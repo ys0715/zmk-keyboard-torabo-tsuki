@@ -42,6 +42,12 @@
             key-positions = <29 17 41>;
             layers = <1>;
         };
+
+        bt_clire {
+            bindings = <&bt BT_CLR>;
+            key-positions = <38 39 40>;
+            layers = <4>;
+        };
     };
 
     keymap {
