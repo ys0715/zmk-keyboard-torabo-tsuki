@@ -43,9 +43,15 @@
             layers = <1>;
         };
 
-        bt_clire {
+        bt_clr {
             bindings = <&bt BT_CLR>;
-            key-positions = <38 39 40>;
+            key-positions = <39 40 41>;
+            layers = <4>;
+        };
+
+        bt_all_clr {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <38 39 40 41>;
             layers = <4>;
         };
     };
