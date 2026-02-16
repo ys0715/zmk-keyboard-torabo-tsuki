@@ -108,5 +108,54 @@
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &bootloader  &trans            &trans     &trans         &trans     &trans      &trans
             >;
         };
+
+        tertiary_layer {
+            bindings = <
+&none  &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none        &none   &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &none   &none   &none   &trans  &none
+            >;
+        };
+
+        scroll_layer {
+            bindings = <
+&none  &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none        &none   &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &none   &none   &none   &trans  &none
+            >;
+        };
+        browser_layer {
+            bindings = <
+&none  &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none        &none   &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &none   &none   &none   &trans  &none
+            >;
+        };
+
+        win_brouser_layer {
+            bindings = <
+&none  &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none        &none   &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &none   &none   &none   &trans  &none
+            >;
+        };
+
+        rectangle_layer {
+            bindings = <
+&none  &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none        &none   &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &none   &none   &none   &trans  &none
+            >;
+        };
     };
 };
