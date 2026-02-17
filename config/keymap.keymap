@@ -14,6 +14,114 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        F1_F13: F1_F13 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F1>, <&kp F13>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F1_F13";
+        };
+
+        F2_F14: F2_F14 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&kp F14>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F2_F14";
+        };
+
+        F3_F15: F3_F15 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F3>, <&kp F15>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F3_F15";
+        };
+
+        F4_F16: F4_F16 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F4>, <&kp F16>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F4_F16";
+        };
+
+        F5_F17: F5_F17 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F5>, <&kp F17>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F5_F17";
+        };
+
+        F6_F18: F6_F18 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F6>, <&kp F18>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F6_F18";
+        };
+
+        F7_F19: F7_F19 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F7>, <&kp F19>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F7_F19";
+        };
+
+        F8_F20: F8_F20 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F8>, <&kp F20>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F8_F20";
+        };
+
+        F9_F21: F9_F21 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F9>, <&kp F21>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F9_F21";
+        };
+
+        F10_F22: F10_F22 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F10>, <&kp F22>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F10_F22";
+        };
+
+        F11_F23: F11_F23 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F11>, <&kp F23>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F11_F23";
+        };
+
+        F12_F24: F12_F24 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F12>, <&kp F24>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F12_F24";
+        };
     };
 
     combos {
