@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -133,34 +134,28 @@
             layers = <0>;
         };
 
-        bootloader {
-            bindings = <&bootloader>;
-            key-positions = <18 30 44>;
-            layers = <0>;
+        LClick {
+            bindings = <&mkp LCLK>;
+            key-positions = <31 32>;
+            layers = <0 1>;
         };
 
-        to_win {
-            bindings = <&to 1>;
-            key-positions = <17 29 41>;
-            layers = <0>;
+        RClick {
+            bindings = <&mkp RCLK>;
+            key-positions = <32 33>;
+            layers = <0 1>;
         };
 
-        to_default {
-            bindings = <&to 0>;
-            key-positions = <29 17 41>;
-            layers = <1>;
+        MClick {
+            bindings = <&mkp MCLK>;
+            key-positions = <33 34>;
+            layers = <0 1>;
         };
 
-        bt_clr {
-            bindings = <&bt BT_CLR>;
-            key-positions = <39 40 41>;
-            layers = <4>;
-        };
-
-        bt_all_clr {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <38 39 40 41>;
-            layers = <4>;
+        Scroll {
+            bindings = <&mo 6>;
+            key-positions = <31 32 33>;
+            layers = <0 1>;
         };
     };
 
@@ -169,11 +164,11 @@
 
         default_layer {
             bindings = <
-&none  &none     &none     &none      &none       &none                                &none        &none  &none      &none    &none          &none
-&none  &kp Q     &kp W     &kp E      &kp R       &kp T                                &kp Y        &kp U  &kp I      &kp O    &kp P          &none
-&none  &kp A     &kp S     &kp D      &kp F       &kp G                                &kp H        &kp J  &kp K      &kp L    &kp SEMI       &none
-&none  &kp Z     &kp X     &kp C      &kp V       &kp B      &none      &none          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH      &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &lt 2 TAB  &kp SPACE  &kp BACKSPACE  &lt 4 ENTER  &none  &none      &none    &kp LC(SPACE)  &none
+&none  &none         &none                &none                 &none       &none                            &none        &none  &none      &none    &none      &none
+&none  &kp Q         &kp W                &kp E                 &kp R       &kp T                            &kp Y        &kp U  &kp I      &kp O    &kp P      &none
+&none  &kp A         &kp S                &kp D                 &kp F       &kp G                            &kp H        &kp J  &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z         &kp X                &kp C                 &kp V       &kp B  &none      &none          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
+&none  &mt LGUI TAB  &mt LALT LANGUAGE_1  &mt LCTRL LANGUAGE_2  &kp LSHIFT  &mo 2  &kp SPACE  &kp BACKSPACE  &lt 4 ENTER  &none  &none      &none    &kp LGUI   &none
             >;
         };
 
@@ -212,18 +207,18 @@
 &none  &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
 &none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none        &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans   &bootloader &trans  &none   &none   &none   &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none        &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans  &none   &none   &none   &trans  &none
             >;
         };
 
         tertiary_layer {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &none   &trans  &none
+&none  &none     &none     &none    &none    &none                     &none         &none         &none           &none         &none           &none
+&none  &F1_F13   &F2_F14   &F3_F15  &F4_F16  &F5_F17                   &out OUT_TOG  &out OUT_BLE  &out OUT_USB    &to 0         &to 1           &none
+&none  &F6_F18   &F7_F19   &F8_F20  &F9_F21  &F10_F22                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &none
+&none  &F11_F23  &F12_F24  &trans   &trans   &kp CAPS  &none   &none   &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &none
+&none  &trans    &trans    &trans   &trans   &trans    &trans  &trans  &trans        &none         &none           &none         &trans          &none
             >;
         };
 
