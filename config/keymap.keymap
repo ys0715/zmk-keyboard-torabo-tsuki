@@ -275,11 +275,11 @@
 
         win_lower_layer {
             bindings = <
-&none  &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none        &none   &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans  &trans  &none   &none   &none   &trans  &none
+&none  &none      &none      &none           &none                 &none                                &none              &none            &none            &none       &none        &none
+&none  &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)                            &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp HOME    &kp PAGE_UP  &none
+&none  &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LA(LS(SPACE))                    &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp END     &pdn_cln     &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)  &none     &none   &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma  &mo 6        &none
+&none  &trans     &trans     &trans          &trans                &trans             &mcr_mcr  &trans  &lt 4 KP_NUMBER_0  &none            &none            &none       &trans       &none
             >;
         };
 
