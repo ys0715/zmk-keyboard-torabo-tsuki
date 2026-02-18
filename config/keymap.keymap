@@ -169,6 +169,48 @@
             key-positions = <30 31>;
             layers = <1>;
         };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <18 19>;
+            layers = <0 1>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <20 21>;
+            layers = <0 1>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <21 22>;
+            layers = <0 1>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <18 19 20>;
+            layers = <0 1>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <19 20 21>;
+            layers = <0 1>;
+        };
+
+        quote {
+            bindings = <&kp SQT>;
+            key-positions = <20 21 22>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
