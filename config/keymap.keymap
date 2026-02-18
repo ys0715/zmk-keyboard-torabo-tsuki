@@ -146,7 +146,7 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
+        esc_ss {
             bindings = <&mt2 LS(LG(NUMBER_4)) ESCAPE>;
             key-positions = <13 14>;
             layers = <0>;
@@ -234,6 +234,12 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <45 46>;
             layers = <0 1>;
+        };
+
+        win_esc_ss {
+            bindings = <&mt2 LS(LG(S)) ESCAPE>;
+            key-positions = <13 14>;
+            layers = <1>;
         };
     };
 
