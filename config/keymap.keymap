@@ -345,21 +345,21 @@
 
         browser_layer {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none               &none              &none            &none          &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &kp LG(R)           &kp LG(MINUS)      &kp LG(EQUAL)    &kp LG(LS(T))  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                  &kp LG(LEFT_ARROW)  &kp LC(TAB)        &kp LC(LS(TAB))  &kp LG(RIGHT)  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &kp LG(T)           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(W)      &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans              &none              &none            &none          &trans  &none
+&none  &none   &none   &none   &none   &none                   &none               &none              &none            &none          &none     &none
+&none  &trans  &trans  &trans  &trans  &trans                  &kp LG(R)           &kp LG(MINUS)      &kp LG(EQUAL)    &kp LG(LS(T))  &kp HOME  &none
+&none  &trans  &trans  &trans  &trans  &trans                  &kp LG(LEFT_ARROW)  &kp LC(TAB)        &kp LC(LS(TAB))  &kp LG(RIGHT)  &trans    &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &kp LG(T)           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(W)      &kp END   &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans              &none              &none            &none          &trans    &none
             >;
         };
 
         win_brouser_layer {
             bindings = <
-&none  &none   &none   &none   &none   &none                   &none               &none              &none            &none          &none   &none
-&none  &trans  &trans  &trans  &trans  &trans                  &kp LC(R)           &kp LC(MINUS)      &kp LC(EQUAL)    &kp LC(LS(T))  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                  &kp LA(LEFT_ARROW)  &kp LC(TAB)        &kp LC(LS(TAB))  &kp LA(RIGHT)  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &kp LC(T)           &sk C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LC(W)      &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans              &none              &none            &none          &trans  &none
+&none  &none   &none   &none   &none   &none                   &none               &none              &none            &none          &none     &none
+&none  &trans  &trans  &trans  &trans  &trans                  &kp LC(R)           &kp LC(MINUS)      &kp LC(EQUAL)    &kp LC(LS(T))  &kp HOME  &none
+&none  &trans  &trans  &trans  &trans  &trans                  &kp LA(LEFT_ARROW)  &kp LC(TAB)        &kp LC(LS(TAB))  &kp LA(RIGHT)  &trans    &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &kp LC(T)           &sk C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LC(W)      &kp END   &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans              &none              &none            &none          &trans    &none
             >;
         };
 
